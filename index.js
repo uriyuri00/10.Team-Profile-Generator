@@ -124,7 +124,7 @@ function createHTML(employees) {
     const teamMembers =  employees.map(employee => {
                 
             return `
-            <div class="card col-3 rounded-3">
+            <div class="card col-3 rounded-3" style="background-color: rgb(218, 198, 226);>
                 <div class="card-title text text-white" style="margin: 10px; background-color: rgb(109, 82, 184); padding: 10px;">
                     <h4 class="name">${employee.getName()}</h4>
                     <h5 class="job-title">${employee.getRole()}</h5>
@@ -156,7 +156,7 @@ function createHTML(employees) {
         <div class="container-fluid" style="background-color: rgb(51, 39, 83); padding: 30px;">
             <h1 class="text-center" style="color: white;">My Team</h1>
         </div>
-        <div class="container row text-center justify-content-between" style="margin: 100px;"">
+        <div class="row text-center justify-content-between" style="margin: 100px;"">
            ${teamMembers.join('')}
         </div>
     </body>
