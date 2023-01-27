@@ -125,9 +125,9 @@ function createHTML(employees) {
                 
             return `
             <div class="card col-3 rounded-3" style="background-color: rgb(218, 198, 226);">
-                <div class="card-title text text-white" style="margin: 10px; background-color: rgb(109, 82, 184); padding: 10px;">
-                    <h4 class="name">${employee.getName()}</h4>
-                    <h5 class="job-title">${employee.getRole()}</h5>
+                <div style="margin: 10px; background-color: rgb(109, 82, 184); padding: 10px;">
+                    <h4>${employee.getName()}</h4>
+                    <h5>${employee.getRole()}</h5>
                 </div>
                 <div class="card-text">
                     <p>Employee ID: ${employee.getId()} </p>
@@ -141,15 +141,10 @@ function createHTML(employees) {
     
 
     const Html = `
-    <!DOCTYPE html>
-    <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="./style.css" rel="stylesheet">
         <title>Team Profile</title>
     </head>
     <body>
